@@ -1,0 +1,50 @@
+.footer__outerContainer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  font-size: small;
+}
+
+.footer__innerContainer {
+  padding: 0.5em 1em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* holds copyright info */
+.footer__leftColumn {
+  font-size: smaller;
+}
+
+/* holds social media icons/links */
+.footer__rightColumn {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.footer__linkIcon {
+  display: flex;
+  align-items: center;
+}
+
+.footer__socialIcon {
+  width: 1.5em;
+  margin: 0 0.5em;
+}
+
+.footer__linkIcon:link, .footer__linkIcon a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.footer__linkIcon:hover {
+  color: #648c91;
+}

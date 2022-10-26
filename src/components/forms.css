@@ -1,0 +1,101 @@
+.form__movieFormContainer {
+  width: 50%;
+  margin-right: 0.5em;
+  border-radius: 0.25em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__control {
+  width: calc(100% - 0.5em);
+  vertical-align: middle;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0.25em auto auto auto;
+}
+
+.form__borderlessFieldset {
+  border: none;
+  width: 100%;
+  margin: 1em auto auto auto;
+  padding: 0;
+}
+
+.form__borderlessFieldset-lastItem {
+  border: none;
+  width: 100%;
+  margin: 1em auto;
+  padding: 0;
+}
+
+.form__borderlessFieldsetDropdown {
+  border: none;
+  width: 43%;
+  padding: 0;
+  margin-top: 1em;
+}
+
+.form__dropdownContainer {
+  width: 100%;
+  margin-bottom: 1em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+#listCategory, #visitStatus {
+  width: 100%;
+}
+
+.form__previewContainer {
+  width: 50%;
+  border-radius: 0.25em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1em;
+  margin-left: 0.5em; 
+}
+
+#card__preview {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
+.form__formAndPreviewContainer {
+width: 80%;
+margin: 1em auto 3em auto;
+display: flex;
+flex-flow: row nowrap;
+}
+
+.form__titleHeader {
+  margin: 0 0 0.5em 0;
+  padding: 0;
+}
+
+.form__btnContainer {
+  display: flex;
+  flex-direction: row nowrap;
+}
+
+#form__leftBtnWrapper, #form__leftBtnWrapperEdit {
+  width: 50%;
+  margin-right: 0.5em;
+}
+
+#form__leftBtn, #form__leftBtnEdit {
+  width: 100%;
+}
+
+#form__rightBtn, #form__rightBtnEdit {
+  width: 50%;
+  margin-left: 0.5em;
+}
+
+.form__instructionLabel {
+  margin: 0.25em 0;
+  font-size: small;
+}

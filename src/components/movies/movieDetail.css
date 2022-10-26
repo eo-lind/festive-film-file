@@ -1,0 +1,54 @@
+.movieDetail__btnContainer {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#movieDetail__editBtnWrapper {
+  margin-right: 0.5em;
+  width: 50%;
+}
+
+#movieDetail__editBtn {
+  width: 100%;
+}
+
+#movieDetail__deleteBtn {
+  margin-left: 0.5em;
+  width: 50%;
+}
+
+.movie__titleAndTopDetails {
+  margin-bottom: 1em;
+}
+
+.movie__yearRatingAndRuntime {
+  font-size: 0.8em;
+  font-weight: normal;
+  margin: 0;
+}
+#movie__YearAndRating {
+  margin-top: 0.25em;
+}
+
+.movie__plot, .movie__review {
+  margin-bottom: 1em;
+  text-align: justify;
+  font-size: 0.8em;
+}
+
+.movie__genre {
+  margin-bottom: 1em;
+  font-size: 0.7em;
+}
+
+.movie__collapsibleDetails{
+  font-size: 0.8em;
+  margin-bottom: 0.6em;
+}
+
+.movie__collapsibleDetailsSummary {
+  font-size: 0.75em;
+  margin-bottom: 0.6em;
+  font-weight: bold;
+}

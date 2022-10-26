@@ -1,8 +1,7 @@
+/* ---------- TEXT STYLING ---------- */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +10,105 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+strong {
+  font-weight: bold;
+}
+
+.descriptor {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: smaller;
+}
+
+/* ---------- MISC STYLING ---------- */
+
+.columnContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.viewBody{
+  margin-bottom: 1em;
+}
+
+/* ---------- LINK STYLING ---------- */
+
+/* unvisited link */
+a:link {
+  color: #648c91;
+  text-decoration: none;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* visited link */
+a:visited {
+  color: #433e5c;
+}
+
+/* mouse over link */
+a:hover {
+  color: #648c91;
+  text-shadow: none;
+}
+
+/* selected link */
+a:active {
+  color: #648c91;
+  text-shadow: none;
+}
+
+/* ---------- BUTTON STYLING ---------- */
+
+/* general buttons */
+button {
+  background-color: #b9edf4;
+  border: 1px solid #433e5c;
+  border-radius: 0.25em;
+  padding: 0.25em;
+  box-shadow: 0.25em 0.25em 0 0 rgba(0, 0, 0, 0.2);
+  color: #433e5c;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* this is the button that appears in list view to add a new movie */
+.btn__add {
+margin: 1em;
+background-color: white;
+}
+
+button:disabled,
+button:disabled:hover {
+  background-color: lightgray;
+}
+
+/* ---------- CARD STYLING ---------- */
+
+.card__container {
+  margin: 1em auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: calc(50% - 4em);
+  margin: 1em 0.5em;
+  padding: 1em;
+  border-radius: 0.25em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#card__detailView {
+  margin: 1em auto 3em auto;
+}
+
+.movie__img {
+  width: 100%;
+}
+
