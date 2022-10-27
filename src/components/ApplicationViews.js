@@ -1,7 +1,7 @@
 import React from "react"
 import { Route, Routes } from "react-router-dom"
 import { Home } from "../Home"
-import { MovieList } from "./movies/MovieList"
+import { MovieList, MovieListWatched, MovieListUnwatched } from "./movies/MovieList"
 import { MovieListHalloween, MovieListHalloweenWatched, MovieListHalloweenUnwatched } from "./movies/MovieListHalloween"
 import { MovieListChristmas, MovieListChristmasWatched, MovieListChristmasUnwatched } from "./movies/MovieListChristmas"
 import { MovieDetail } from "./movies/MovieDetail"
@@ -15,6 +15,8 @@ export const ApplicationViews = () => {
                 <Route path="/" element={<Home />} />
 
                 <Route path="/movies" element={<MovieList />} />
+                <Route path="/movies-watched" element={<MovieListWatched />} />
+                <Route path="/movies-unwatched" element={<MovieListUnwatched />} />
                 <Route path="/halloween-movies" element={<MovieListHalloween />} />
                 <Route path="/halloween-movies-watched" element={<MovieListHalloweenWatched />} />
                 <Route path="/halloween-movies-unwatched" element={<MovieListHalloweenUnwatched />} />
