@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-import { getExternalMovieByTitle, addMovie } from "../../modules/MovieManager"
+import { getExternalMovieByTitle, addMovie, getMovieByTitle} from "../../modules/MovieManager"
 
 
 export const MovieSearchByTitle = () => {
@@ -23,21 +23,58 @@ export const MovieSearchByTitle = () => {
     }
 
 
-    // new below
+
     const handleClickSaveMovie = (event) => {
         event.preventDefault()
- 
-        addMovie(externalMovie).then(() => navigate("/movies"))
-        // }
-    }
 
-    // new above
+        addMovie(externalMovie)
+        .then(() => {
+            navigate("/movies")})
+ 
+
+        
+        // TODO: navigate to an edit form that allows users to add user input to new movie object (same idea as movie edit form)
+
+    }
 
     const handleClickSearch = (event) => {
         event.preventDefault()
 
         getExternalMovieByTitle(searchTerm.title).then((movieFromExternalAPI) => {
-            setExternalMovie(movieFromExternalAPI)
+            
+            const updatedExternalMovie = {
+                Title: movieFromExternalAPI.Title,
+                Year: movieFromExternalAPI.Year,
+                Rated: movieFromExternalAPI.Rated,
+                Released: movieFromExternalAPI.Released,
+                Runtime: movieFromExternalAPI.Runtime,
+                Genre: movieFromExternalAPI.Genre,
+                Director: movieFromExternalAPI.Director,
+                Writer: movieFromExternalAPI.Writer,
+                Actors: movieFromExternalAPI.Actors,
+                Plot: movieFromExternalAPI.Plot,
+                Language: movieFromExternalAPI.Language,
+                Country: movieFromExternalAPI.Country,
+                Awards: movieFromExternalAPI.Awards,
+                Poster: movieFromExternalAPI.Poster,
+                Ratings: movieFromExternalAPI.Ratings,
+                Metascore: movieFromExternalAPI.Metascore,
+                imdbRating: movieFromExternalAPI.imdbRating,
+                imdbVotes: movieFromExternalAPI.imdbVotes,
+                imdbID: movieFromExternalAPI.imdbID,
+                Type: movieFromExternalAPI.Type,
+                DVD: movieFromExternalAPI.DVD,
+                BoxOffice: movieFromExternalAPI.BoxOffice,
+                Production: movieFromExternalAPI.Production,
+                Website: movieFromExternalAPI.Website,
+                ListCategory: "",
+                Availability: "",
+                Watched: "no",
+                UserReview: "",
+                UserScore: "",
+            }
+
+            setExternalMovie(updatedExternalMovie)
         })
 
 
