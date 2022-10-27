@@ -37,7 +37,26 @@ export const getAllMovies = () => {
     return fetch(`${remoteURL}/movies?_sort=title`).then((res) => res.json())
 }
 
+// get internal movie by title
+export const getMovieByTitle = (title) => {
+    return fetch(`${remoteURL}/movies/${title}`).then((res) => res.json())
+}
+
 // -------------------- filtered results below -------------------- //
+
+// get *ALL* watched
+export const getAllWatchedMovies = () => {
+    return fetch(
+        `${remoteURL}/movies?Watched=yes&_sort=Title`
+    ).then((res) => res.json())
+}
+
+// get *ALL* unwatched
+export const getAllUnwatchedMovies = () => {
+    return fetch(`${remoteURL}/movies?Watched=no&_sort=Title`).then((res) =>
+        res.json()
+    )
+}
 
 // get all in Christmas list
 export const getAllChristmasList = () => {
