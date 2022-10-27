@@ -1,6 +1,11 @@
 import React, { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
-import { addMovie, getExternalMovieByTitle } from "../../modules/MovieManager"
+import {
+    addMovie,
+    getExternalMovieByTitle,
+    getExternalMovieByTitleAndYear,
+    getExternalMovieByImdbId,
+} from "../../modules/MovieManager"
 import { getAverageRating } from "../helpers/Helpers"
 import "../forms.css"
 
@@ -8,6 +13,7 @@ import "../forms.css"
 export const MovieForm = () => {
     const [externalMovie, setExternalMovie] = useState({
         Title: "",
+        Year: "",
     })
     const [searchTerm, setSearchTerm] = useState()
     const navigate = useNavigate()
@@ -20,6 +26,7 @@ export const MovieForm = () => {
         }
         newSearchTerm[event.target.id] = selectedVal
         setSearchTerm(newSearchTerm)
+        console.log(newSearchTerm.imdbID);
     }
 
     const handleClickSaveMovie = (event) => {
@@ -35,94 +42,91 @@ export const MovieForm = () => {
     const handleClickSearch = (event) => {
         event.preventDefault()
 
-        getExternalMovieByTitle(searchTerm.title).then(
-            (movieFromExternalAPI) => {
-                const updatedExternalMovie = {
-                    Title: movieFromExternalAPI.Title,
-                    Year: movieFromExternalAPI.Year,
-                    Rated: movieFromExternalAPI.Rated,
-                    Released: movieFromExternalAPI.Released,
-                    Runtime: movieFromExternalAPI.Runtime,
-                    Genre: movieFromExternalAPI.Genre,
-                    Director: movieFromExternalAPI.Director,
-                    Writer: movieFromExternalAPI.Writer,
-                    Actors: movieFromExternalAPI.Actors,
-                    Plot: movieFromExternalAPI.Plot,
-                    Language: movieFromExternalAPI.Language,
-                    Country: movieFromExternalAPI.Country,
-                    Awards: movieFromExternalAPI.Awards,
-                    Poster: movieFromExternalAPI.Poster,
-                    Ratings: movieFromExternalAPI.Ratings,
-                    Metascore: movieFromExternalAPI.Metascore,
-                    imdbRating: movieFromExternalAPI.imdbRating,
-                    imdbVotes: movieFromExternalAPI.imdbVotes,
-                    imdbID: movieFromExternalAPI.imdbID,
-                    Type: movieFromExternalAPI.Type,
-                    DVD: movieFromExternalAPI.DVD,
-                    BoxOffice: movieFromExternalAPI.BoxOffice,
-                    Production: movieFromExternalAPI.Production,
-                    Website: movieFromExternalAPI.Website,
-                    ListCategory: "",
-                    Availability: "",
-                    Watched: "no",
-                    UserReview: "",
-                    UserScore: "",
+        if (searchTerm.title !== "" && searchTerm.year === "") {
+            getExternalMovieByTitle(searchTerm.title).then(
+                (movieFromExternalAPI) => {
+                    const updatedExternalMovie = {
+                        Title: movieFromExternalAPI.Title,
+                        Year: movieFromExternalAPI.Year,
+                        Rated: movieFromExternalAPI.Rated,
+                        Released: movieFromExternalAPI.Released,
+                        Runtime: movieFromExternalAPI.Runtime,
+                        Genre: movieFromExternalAPI.Genre,
+                        Director: movieFromExternalAPI.Director,
+                        Writer: movieFromExternalAPI.Writer,
+                        Actors: movieFromExternalAPI.Actors,
+                        Plot: movieFromExternalAPI.Plot,
+                        Language: movieFromExternalAPI.Language,
+                        Country: movieFromExternalAPI.Country,
+                        Awards: movieFromExternalAPI.Awards,
+                        Poster: movieFromExternalAPI.Poster,
+                        Ratings: movieFromExternalAPI.Ratings,
+                        Metascore: movieFromExternalAPI.Metascore,
+                        imdbRating: movieFromExternalAPI.imdbRating,
+                        imdbVotes: movieFromExternalAPI.imdbVotes,
+                        imdbID: movieFromExternalAPI.imdbID,
+                        Type: movieFromExternalAPI.Type,
+                        DVD: movieFromExternalAPI.DVD,
+                        BoxOffice: movieFromExternalAPI.BoxOffice,
+                        Production: movieFromExternalAPI.Production,
+                        Website: movieFromExternalAPI.Website,
+                        ListCategory: "",
+                        Availability: "",
+                        Watched: "no",
+                        UserReview: "",
+                        UserScore: "",
+                    }
+
+                    setExternalMovie(updatedExternalMovie)
                 }
+            )
+        } else if (searchTerm.title !== "" && searchTerm.year !== "") {
+            getExternalMovieByTitleAndYear(searchTerm.title, searchTerm.year).then(
+                (movieFromExternalAPI) => {
+                    const updatedExternalMovie = {
+                        Title: movieFromExternalAPI.Title,
+                        Year: movieFromExternalAPI.Year,
+                        Rated: movieFromExternalAPI.Rated,
+                        Released: movieFromExternalAPI.Released,
+                        Runtime: movieFromExternalAPI.Runtime,
+                        Genre: movieFromExternalAPI.Genre,
+                        Director: movieFromExternalAPI.Director,
+                        Writer: movieFromExternalAPI.Writer,
+                        Actors: movieFromExternalAPI.Actors,
+                        Plot: movieFromExternalAPI.Plot,
+                        Language: movieFromExternalAPI.Language,
+                        Country: movieFromExternalAPI.Country,
+                        Awards: movieFromExternalAPI.Awards,
+                        Poster: movieFromExternalAPI.Poster,
+                        Ratings: movieFromExternalAPI.Ratings,
+                        Metascore: movieFromExternalAPI.Metascore,
+                        imdbRating: movieFromExternalAPI.imdbRating,
+                        imdbVotes: movieFromExternalAPI.imdbVotes,
+                        imdbID: movieFromExternalAPI.imdbID,
+                        Type: movieFromExternalAPI.Type,
+                        DVD: movieFromExternalAPI.DVD,
+                        BoxOffice: movieFromExternalAPI.BoxOffice,
+                        Production: movieFromExternalAPI.Production,
+                        Website: movieFromExternalAPI.Website,
+                        ListCategory: "",
+                        Availability: "",
+                        Watched: "no",
+                        UserReview: "",
+                        UserScore: "",
+                    }
 
-                setExternalMovie(updatedExternalMovie)
-            }
-        )
+                    setExternalMovie(updatedExternalMovie)
+                }
+            )
+        } 
+        
     }
-   
-    const posterAltTextString = `${externalMovie.Title} poster`
-    const averageRating = getAverageRating(externalMovie)
 
-    return (
-        <div className="form__formAndPreviewContainer">
-            <div className="form__movieFormContainer">
-                <h2 className="form__titleHeader">New Movie</h2>
-                <input
-                    type="text"
-                    id="title"
-                    onChange={handleControlledInputChange}
-                    required
-                    autoFocus
-                    className="form__control"
-                    placeholder="Movie title"
-                />
-                <button
-                    type="button"
-                    className="btn__general"
-                    id="form__rightBtn"
-                    onClick={handleClickSearch}
-                >
-                    search
-                </button>
-                <button
-                    type="button"
-                    className="btn__general"
-                    id="form__rightButtonEdit"
-                    onClick={handleClickSaveMovie}
-                >
-                    Add This Movie
-                </button>
-                <div className="form__btnContainer">
-                    <Link id="form__leftBtnWrapper" to="/movies">
-                        <button
-                            type="button"
-                            className="btn__general"
-                            id="form__leftBtn"
-                        >
-                            Cancel
-                        </button>
-                    </Link>
-                </div>
-            </div>
-            <div className="form__previewContainer">
-                <div className="card" id="card__preview">
-                    <h2 className="form__titleHeader">Preview</h2>
-                    {/* -------------------- basic movie details below -------------------- */}
-                    {externalMovie.poster === "" ? (
+    const showPreview = () => {
+        if (externalMovie.Title !== "") {
+            return (
+                <>
+                    {externalMovie.Poster === "" ? (
                         <></>
                     ) : (
                         <img
@@ -134,7 +138,8 @@ export const MovieForm = () => {
 
                     <section className="movie__titleAndTopDetails">
                         <h3 className="movie__title">
-                            {externalMovie.Website === "N/A" || externalMovie.Website === "" ? (
+                            {externalMovie.Website === "N/A" ||
+                            externalMovie.Website === "" ? (
                                 externalMovie.Title
                             ) : (
                                 <a href={externalMovie.Website} target="_blank">
@@ -147,7 +152,9 @@ export const MovieForm = () => {
                             id="movie__YearAndRating"
                         >
                             {externalMovie.Year}{" "}
-                            {externalMovie.Rated === "" ? "" : `(${externalMovie.Rated})`}
+                            {externalMovie.Rated === ""
+                                ? ""
+                                : `(${externalMovie.Rated})`}
                         </p>
                         <p className="movie__yearRatingAndRuntime">
                             {externalMovie.Runtime}
@@ -156,9 +163,6 @@ export const MovieForm = () => {
 
                     <div className="movie__plot">{externalMovie.Plot}</div>
                     <div className="movie__genre">{externalMovie.Genre}</div>
-                    {/* -------------------- basic movie details above -------------------- */}
-                   
-                    {/* -------------------- collapsed details below -------------------- */}
                     <details>
                         <summary className="movie__collapsibleDetailsSummary">
                             More film details
@@ -215,7 +219,80 @@ export const MovieForm = () => {
                             )}
                         </div>
                     </details>
-                    {/* -------------------- collapsed details above -------------------- */}
+                </>
+            )
+                                        
+        } else {
+            return(<></>)
+            
+        }
+    }
+
+   
+    const posterAltTextString = `${externalMovie.Title} poster`
+    const averageRating = getAverageRating(externalMovie)
+
+    return (
+        <div className="form__formAndPreviewContainer">
+            <div className="form__movieFormContainer">
+                <h2 className="form__titleHeader">New Movie</h2>
+
+                <section className="form__searchTitleContainer">
+                    {/* TODO: add fieldset and label */}
+                    <input
+                        type="text"
+                        id="title"
+                        onChange={handleControlledInputChange}
+                        required
+                        autoFocus
+                        className="form__control"
+                        placeholder="Movie title"
+                    />
+                    {/* TODO: handle years? */}
+                    <input
+                        type="number"
+                        id="year"
+                        onChange={handleControlledInputChange}
+                        required
+                        autoFocus
+                        className="form__control"
+                        placeholder="Year (optional)"
+                    />
+                    <button
+                        type="button"
+                        className="btn__general"
+                        id="form__rightBtn"
+                        onClick={handleClickSearch}
+                    >
+                        search
+                    </button>
+                </section>
+
+                <section className="form__btnContainer">
+                    <button
+                        type="button"
+                        className="btn__general"
+                        id="form__rightButtonEdit"
+                        onClick={handleClickSaveMovie}
+                    >
+                        Add This Movie
+                    </button>
+                    <Link id="form__leftBtnWrapper" to="/movies">
+                        <button
+                            type="button"
+                            className="btn__general"
+                            id="form__leftBtn"
+                        >
+                            Cancel
+                        </button>
+                    </Link>
+                </section>
+            </div>
+            {/* -------------------- PREVIEW BELOW -------------------- */}
+            <div className="form__previewContainer">
+                <div className="card" id="card__preview">
+                    <h2 className="form__titleHeader">Preview</h2>
+                    {showPreview()}
                 </div>
             </div>
         </div>
