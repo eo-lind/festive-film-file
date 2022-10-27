@@ -182,7 +182,7 @@ export const MovieForm = () => {
                             required
                             autoFocus
                             className="form__control"
-                            placeholder="Movie userScore"
+                            placeholder="Your score"
                             value={movie.UserScore}
                         />
                     </fieldset>

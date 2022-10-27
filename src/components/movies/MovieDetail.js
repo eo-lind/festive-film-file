@@ -176,7 +176,7 @@ export const MovieDetail = () => {
                     <>
                         <div className="movie__collapsibleDetails">
                             <span className="descriptor">How to Watch:</span>{" "}
-                            {correctAvailabilityString(movie)}
+                           {correctAvailabilityString(movie)}
                         </div>
                     </>
                 )}
