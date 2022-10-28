@@ -99,3 +99,57 @@ flex-flow: row nowrap;
   margin: 0.25em 0;
   font-size: small;
 }
+
+.form__searchContainer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  border-radius: 0.25em;
+  margin-bottom: 1em;
+}
+
+legend {
+  font-size: small;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form__searchInputContainer{
+  margin-bottom: 1em;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.form__leftInput {
+  width: 70%;
+  box-sizing: border-box;
+  margin-right: 0.5em;
+}
+
+.form__rightInput {
+  width: 30%;
+  box-sizing: border-box;
+  font-size: 0.75em;
+}
+
+.form__finalActionBtnContainer {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#form__AddMovieBtn {
+  width: 50%;
+  box-sizing: border-box;
+  margin-right: 0.5em;
+}
+#form__CancelAddMovieBtnWrapper {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+#form__CancelAddMovieBtn {
+  width: 100%;
+  box-sizing: border-box;
+}
