@@ -138,14 +138,14 @@ export const MovieEditForm = () => {
                 {/* ---------- user-generated input below ---------- */}
                 <div className="form__dropdownContainer">
                     <fieldset className="form__borderlessFieldsetDropdown">
-                        <label htmlFor="category">
+                        <label htmlFor="ListCategory">
                             Select all applicable lists:
                         </label>
                         <br />
                         <select
                             value={movie.ListCategory}
-                            name="listCategory"
-                            id="listCategory"
+                            name="ListCategory"
+                            id="ListCategory"
                             onChange={handleSelectMultipleChange}
                             className="form__control"
                         >
@@ -159,12 +159,12 @@ export const MovieEditForm = () => {
                     </fieldset>
 
                     <fieldset className="form__borderlessFieldsetDropdown">
-                        <label htmlFor="watched">Have you watched it? </label>
+                        <label htmlFor="Watched">Have you watched it? </label>
                         <br />
                         <select
                             value={movie.Watched}
-                            name="watched"
-                            id="watched"
+                            name="Watched"
+                            id="Watched"
                             onChange={handleControlledInputChange}
                             className="form__control"
                         >
@@ -176,14 +176,14 @@ export const MovieEditForm = () => {
                 </div>
                 <div className="form__dropdownContainer">
                     <fieldset className="form__borderlessFieldsetDropdown">
-                        <label htmlFor="availability">How to Watch:</label>
+                        <label htmlFor="Availability">How to Watch:</label>
                         <p className="form__instructionLabel">
                             Select all that apply.
                         </p>
                         <select
                             value={movie.Availability}
-                            name="availability"
-                            id="availability"
+                            name="Availability"
+                            id="Availability"
                             onChange={handleSelectMultipleChange}
                             className="form__control"
                         >
@@ -199,7 +199,7 @@ export const MovieEditForm = () => {
                         </select>
                     </fieldset>
                     <fieldset className="form__borderlessFieldsetDropdown">
-                        <label htmlFor="userScore">Score:</label>
+                        <label htmlFor="UserScore">Score:</label>
                         <p className="form__instructionLabel">
                             Select a score between 0 and 10, 10 being the best.
                         </p>
@@ -207,7 +207,7 @@ export const MovieEditForm = () => {
                             type="number"
                             min={0}
                             max={10}
-                            id="userScore"
+                            id="UserScore"
                             onChange={handleControlledInputChange}
                             required
                             autoFocus
@@ -218,10 +218,10 @@ export const MovieEditForm = () => {
                     </fieldset>
                 </div>
                 <fieldset className="form__borderlessFieldset-lastItem">
-                    <label htmlFor="userReview">Your Review:</label>
+                    <label htmlFor="UserReview">Your Review:</label>
                     <br />
                     <textarea
-                        id="userReview"
+                        id="UserReview"
                         onChange={handleControlledInputChange}
                         autoFocus
                         className="form__control"
@@ -234,11 +234,11 @@ export const MovieEditForm = () => {
 
                 {/* ---------- external origin film data below ---------- */}
                 <fieldset className="form__borderlessFieldset">
-                    <label htmlFor="website">Website:</label>
+                    <label htmlFor="Website">Website:</label>
                     <br />
                     <input
                         type="text"
-                        id="website"
+                        id="Website"
                         onChange={handleControlledInputChange}
                         required
                         autoFocus
@@ -273,7 +273,7 @@ export const MovieEditForm = () => {
                 <div className="card" id="card__preview">
                     <h2 className="form__titleHeader">Preview</h2>
                     {/* -------------------- basic movie details below -------------------- */}
-                    {movie.poster === "" ? (
+                    {movie.Poster === "" ? (
                         <></>
                     ) : (
                         <img

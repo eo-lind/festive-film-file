@@ -17,12 +17,12 @@ export const getExternalMovieByTitleAndYear = (titleInput, yearInput) => {
     ).then((res) => res.json())
 }
 
-// get movie by IMDb id
-export const getExternalMovieByImdbId = (imdbIdInput) => {
-    return fetch(
-        `${externalURL}/?i=${imdbIdInput}&plot=full&apikey=${apiKey}`
-    ).then((res) => res.json())
-}
+// // get movie by IMDb id
+// export const getExternalMovieByImdbId = (imdbIdInput) => {
+//     return fetch(
+//         `${externalURL}/?i=${imdbIdInput}&plot=full&apikey=${apiKey}`
+//     ).then((res) => res.json())
+// }
 
 // -------------------- get movies from external API above -------------------- //
 
@@ -35,11 +35,6 @@ export const getMovieById = (id) => {
 // get all
 export const getAllMovies = () => {
     return fetch(`${remoteURL}/movies?_sort=title`).then((res) => res.json())
-}
-
-// get internal movie by title
-export const getMovieByTitle = (title) => {
-    return fetch(`${remoteURL}/movies/${title}`).then((res) => res.json())
 }
 
 // -------------------- filtered results below -------------------- //
