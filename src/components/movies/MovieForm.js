@@ -4,7 +4,6 @@ import {
     addMovie,
     getExternalMovieByTitle,
     getExternalMovieByTitleAndYear,
-    getExternalMovieByImdbId,
 } from "../../modules/MovieManager"
 import { getAverageRating } from "../helpers/Helpers"
 import "../forms.css"
@@ -26,7 +25,6 @@ export const MovieForm = () => {
         }
         newSearchTerm[event.target.id] = selectedVal
         setSearchTerm(newSearchTerm)
-        console.log(newSearchTerm.imdbID);
     }
 
     const handleClickSaveMovie = (event) => {
@@ -237,51 +235,52 @@ export const MovieForm = () => {
             <div className="form__movieFormContainer">
                 <h2 className="form__titleHeader">New Movie</h2>
 
-                <section className="form__searchTitleContainer">
-                    {/* TODO: add fieldset and label */}
+                <fieldset className="form__searchContainer">
+                    <legend>Search For A Movie</legend>
+                    <div className="form__searchInputContainer">
                     <input
                         type="text"
                         id="title"
                         onChange={handleControlledInputChange}
                         required
                         autoFocus
-                        className="form__control"
+                        className="form__leftInput"
                         placeholder="Movie title"
                     />
-                    {/* TODO: handle years? */}
                     <input
-                        type="number"
+                        type="text"
                         id="year"
                         onChange={handleControlledInputChange}
                         required
                         autoFocus
-                        className="form__control"
+                        className="form__rightInput"
                         placeholder="Year (optional)"
                     />
+                    </div>
                     <button
                         type="button"
                         className="btn__general"
-                        id="form__rightBtn"
+                        id="form__searchBtn"
                         onClick={handleClickSearch}
                     >
                         search
                     </button>
-                </section>
+                </fieldset>
 
-                <section className="form__btnContainer">
+                <section className="form__finalActionBtnContainer">
                     <button
                         type="button"
                         className="btn__general"
-                        id="form__rightButtonEdit"
+                        id="form__AddMovieBtn"
                         onClick={handleClickSaveMovie}
                     >
                         Add This Movie
                     </button>
-                    <Link id="form__leftBtnWrapper" to="/movies">
+                    <Link id="form__CancelAddMovieBtnWrapper" to="/movies">
                         <button
                             type="button"
                             className="btn__general"
-                            id="form__leftBtn"
+                            id="form__CancelAddMovieBtn"
                         >
                             Cancel
                         </button>
