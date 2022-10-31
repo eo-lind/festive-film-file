@@ -8,6 +8,7 @@ import { MovieDetail } from "./movies/MovieDetail"
 import { MovieForm } from "./movies/MovieForm"
 import { MovieEditForm } from "./movies/MovieEditForm"
 import { CategoryForm } from "./categories/CategoryForm"
+import { AvailabilityForm } from "./availability/AvailabilityForm"
 
 export const ApplicationViews = () => {
     return (
@@ -56,6 +57,7 @@ export const ApplicationViews = () => {
                     element={<MovieEditForm />}
                 />
                 <Route path="/categories/create" element={<CategoryForm />} />
+                <Route path="/availability/create" element={<AvailabilityForm />} />
             </Routes>
         </>
     )
