@@ -7,6 +7,8 @@ import { MovieListChristmas, MovieListChristmasWatched, MovieListChristmasUnwatc
 import { MovieDetail } from "./movies/MovieDetail"
 import { MovieForm } from "./movies/MovieForm"
 import { MovieEditForm } from "./movies/MovieEditForm"
+import { CategoryForm } from "./categories/CategoryForm"
+import { AvailabilityForm } from "./availability/AvailabilityForm"
 
 export const ApplicationViews = () => {
     return (
@@ -16,13 +18,34 @@ export const ApplicationViews = () => {
 
                 <Route path="/movies" element={<MovieList />} />
                 <Route path="/movies-watched" element={<MovieListWatched />} />
-                <Route path="/movies-unwatched" element={<MovieListUnwatched />} />
-                <Route path="/halloween-movies" element={<MovieListHalloween />} />
-                <Route path="/halloween-movies-watched" element={<MovieListHalloweenWatched />} />
-                <Route path="/halloween-movies-unwatched" element={<MovieListHalloweenUnwatched />} />
-                <Route path="/christmas-movies" element={<MovieListChristmas />} />
-                <Route path="/christmas-movies-watched" element={<MovieListChristmasWatched />} />
-                <Route path="/christmas-movies-unwatched" element={<MovieListChristmasUnwatched />} />
+                <Route
+                    path="/movies-unwatched"
+                    element={<MovieListUnwatched />}
+                />
+                <Route
+                    path="/halloween-movies"
+                    element={<MovieListHalloween />}
+                />
+                <Route
+                    path="/halloween-movies-watched"
+                    element={<MovieListHalloweenWatched />}
+                />
+                <Route
+                    path="/halloween-movies-unwatched"
+                    element={<MovieListHalloweenUnwatched />}
+                />
+                <Route
+                    path="/christmas-movies"
+                    element={<MovieListChristmas />}
+                />
+                <Route
+                    path="/christmas-movies-watched"
+                    element={<MovieListChristmasWatched />}
+                />
+                <Route
+                    path="/christmas-movies-unwatched"
+                    element={<MovieListChristmasUnwatched />}
+                />
                 <Route
                     exact
                     path="/movies/:movieId"
@@ -33,6 +56,8 @@ export const ApplicationViews = () => {
                     path="/movies/:movieId/edit"
                     element={<MovieEditForm />}
                 />
+                <Route path="/categories/create" element={<CategoryForm />} />
+                <Route path="/availability/create" element={<AvailabilityForm />} />
             </Routes>
         </>
     )
