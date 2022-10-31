@@ -1547,6 +1547,51 @@
       "UserReview": "",
       "UserScore": "",
       "id": 37
+    },
+    {
+      "Title": "The Big Sleep",
+      "Year": "1946",
+      "Rated": "Passed",
+      "Released": "31 Aug 1946",
+      "Runtime": "114 min",
+      "Genre": "Crime, Film-Noir, Mystery",
+      "Director": "Howard Hawks",
+      "Writer": "William Faulkner, Leigh Brackett, Jules Furthman",
+      "Actors": "Humphrey Bogart, Lauren Bacall, John Ridgely",
+      "Plot": "P.I. Philip Marlowe's hired by a wealthy general to find out and stop his daughter, Carmen from being blackmailed over gambling debts, Marlowe finds himself deep within a web of love triangles, blackmail, murder, gambling, and organised crime. With help from Vivian (another of the general's daughters), Marlowe hatches a plot to free the family from this web and trap the real culprit.",
+      "Language": "English",
+      "Country": "United States",
+      "Awards": "2 wins & 1 nomination",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMjdiM2IyZmQtODJiYy00NDNkLTllYmItMmFjMDNiYTQyOGVkXkEyXkFqcGdeQXVyNDY2MTk1ODk@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.9/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "97%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "86/100"
+        }
+      ],
+      "Metascore": "86",
+      "imdbRating": "7.9",
+      "imdbVotes": "86,067",
+      "imdbID": "tt0038355",
+      "Type": "movie",
+      "DVD": "15 Feb 2000",
+      "BoxOffice": "$25,556",
+      "Production": "N/A",
+      "Website": "N/A",
+      "ListCategory": "L.A., Noir, ",
+      "Availability": "",
+      "Watched": "no",
+      "UserReview": "",
+      "UserScore": "",
+      "id": 38
     }
   ],
   "categories": [
@@ -1561,6 +1606,10 @@
     {
       "categoryName": "Noir",
       "id": 3
+    },
+    {
+      "categoryName": "L.A.",
+      "id": 4
     }
   ],
   "availability": [
@@ -1595,6 +1644,10 @@
     {
       "id": 8,
       "serviceName": "MST3K Gizmoplex"
+    },
+    {
+      "serviceName": "TCM",
+      "id": 9
     }
   ]
 }
