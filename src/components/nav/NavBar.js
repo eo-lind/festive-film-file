@@ -50,6 +50,17 @@ export const NavBar = () => {
                         Add Movie
                     </button>
                 </li>
+                <li className="navbar__item">
+                    <button
+                        type="button"
+                        className="btn__add"
+                        onClick={() => {
+                            navigate("/categories/create")
+                        }}
+                    >
+                        Add List
+                    </button>
+                </li>
             </ul>
         </section>
     )
