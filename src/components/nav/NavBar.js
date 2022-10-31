@@ -61,6 +61,17 @@ export const NavBar = () => {
                         Add List
                     </button>
                 </li>
+                <li className="navbar__item">
+                    <button
+                        type="button"
+                        className="btn__add"
+                        onClick={() => {
+                            navigate("/availability/create")
+                        }}
+                    >
+                        Add Streaming Service
+                    </button>
+                </li>
             </ul>
         </section>
     )
