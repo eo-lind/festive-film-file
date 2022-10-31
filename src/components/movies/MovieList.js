@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import { MovieCard } from "./MovieCard"
 import { getAllMovies, getAllWatchedMovies, getAllUnwatchedMovies } from "../../modules/MovieManager"
+import { CountAllMovies, CountAllWatchedMovies, CountAllUnwatchedMovies } from "./MovieCounters"
 
 // All movies
 export const MovieList = () => {
@@ -28,18 +29,15 @@ export const MovieList = () => {
                         className="movies__listFilterLabels"
                         htmlFor="watched"
                     >
-                        Watched
+                        Watched (<CountAllWatchedMovies />)
                     </label>
                 </div>
                 <div className="movies__listFilterBtnAndLabelContainer">
                     <Link to="/movies-unwatched">
                         <button className="movies__listFilterBtn" />
                     </Link>
-                    <label
-                        className="movies__listFilterLabels"
-                        htmlFor="unwatched"
-                    >
-                        Unwatched
+                    <label className="movies__listFilterLabels" htmlFor="all">
+                        Unwatched (<CountAllUnwatchedMovies />)
                     </label>
                 </div>
                 <div className="movies__listFilterBtnAndLabelContainer">
@@ -47,7 +45,7 @@ export const MovieList = () => {
                         <button className="movies__listFilterBtn" />
                     </Link>
                     <label className="movies__listFilterLabels" htmlFor="all">
-                        All
+                        All (<CountAllMovies />)
                     </label>
                 </div>
             </section>
@@ -89,18 +87,15 @@ export const MovieListWatched = () => {
                         className="movies__listFilterLabels"
                         htmlFor="watched"
                     >
-                        Watched
+                        Watched (<CountAllWatchedMovies />)
                     </label>
                 </div>
                 <div className="movies__listFilterBtnAndLabelContainer">
                     <Link to="/movies-unwatched">
                         <button className="movies__listFilterBtn" />
                     </Link>
-                    <label
-                        className="movies__listFilterLabels"
-                        htmlFor="unwatched"
-                    >
-                        Unwatched
+                    <label className="movies__listFilterLabels" htmlFor="all">
+                        Unwatched (<CountAllUnwatchedMovies />)
                     </label>
                 </div>
                 <div className="movies__listFilterBtnAndLabelContainer">
@@ -108,7 +103,7 @@ export const MovieListWatched = () => {
                         <button className="movies__listFilterBtn" />
                     </Link>
                     <label className="movies__listFilterLabels" htmlFor="all">
-                        All
+                        All (<CountAllMovies />)
                     </label>
                 </div>
             </section>
@@ -150,18 +145,15 @@ export const MovieListUnwatched = () => {
                         className="movies__listFilterLabels"
                         htmlFor="watched"
                     >
-                        Watched
+                        Watched (<CountAllWatchedMovies />)
                     </label>
                 </div>
                 <div className="movies__listFilterBtnAndLabelContainer">
                     <Link to="/movies-unwatched">
                         <button className="movies__listFilterBtn" />
                     </Link>
-                    <label
-                        className="movies__listFilterLabels"
-                        htmlFor="unwatched"
-                    >
-                        Unwatched
+                    <label className="movies__listFilterLabels" htmlFor="all">
+                        Unwatched (<CountAllUnwatchedMovies />)
                     </label>
                 </div>
                 <div className="movies__listFilterBtnAndLabelContainer">
@@ -169,7 +161,7 @@ export const MovieListUnwatched = () => {
                         <button className="movies__listFilterBtn" />
                     </Link>
                     <label className="movies__listFilterLabels" htmlFor="all">
-                        All
+                        All (<CountAllMovies />)
                     </label>
                 </div>
             </section>
