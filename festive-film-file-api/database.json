@@ -1375,6 +1375,133 @@
       "UserReview": "",
       "UserScore": "",
       "id": 33
+    },
+    {
+      "Title": "Predator",
+      "Year": "1987",
+      "Rated": "R",
+      "Released": "12 Jun 1987",
+      "Runtime": "107 min",
+      "Genre": "Action, Adventure, Horror",
+      "Director": "John McTiernan",
+      "Writer": "Jim Thomas, John Thomas",
+      "Actors": "Arnold Schwarzenegger, Carl Weathers, Kevin Peter Hall",
+      "Plot": "A team of special force ops, led by a tough but fair soldier, Major \"Dutch\" Schaefer, are ordered to assist CIA man, Colonel Al Dillon, on a rescue mission for potential survivors of a Helicopter downed over remote South American jungle. Not long after they land, Dutch and his team discover that they have been sent in under false pretenses. This deception turns out to be the least of their worries though, when they find themselves being methodically hunted by something not of this world.",
+      "Language": "English, Spanish, Russian",
+      "Country": "United States, Mexico",
+      "Awards": "Nominated for 1 Oscar. 3 wins & 6 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BY2QwYmFmZTEtNzY2Mi00ZWMyLWEwY2YtMGIyNGZjMWExOWEyXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.8/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "80%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "47/100"
+        }
+      ],
+      "Metascore": "47",
+      "imdbRating": "7.8",
+      "imdbVotes": "420,787",
+      "imdbID": "tt0093773",
+      "Type": "movie",
+      "DVD": "26 Dec 2000",
+      "BoxOffice": "$59,735,548",
+      "Production": "N/A",
+      "Website": "N/A",
+      "ListCategory": "",
+      "Availability": "",
+      "Watched": "no",
+      "UserReview": "",
+      "UserScore": "",
+      "id": 34
+    },
+    {
+      "Title": "Extra Terrestrial Visitors",
+      "Year": "1983",
+      "Rated": "N/A",
+      "Released": "13 Dec 1983",
+      "Runtime": "80 min",
+      "Genre": "Drama, Fantasy, Horror",
+      "Director": "Juan Piquer Simón",
+      "Writer": "Joaquín Grau, Juan Piquer Simón",
+      "Actors": "Ian Sera, Nina Ferrer, Susana Bequer",
+      "Plot": "One of the Mystery Science Theater 3000 faves. A little boy who has an extensive array of pets he likes to call \"specimens\" finds an alien egg to hatch, somewhat like Horton. The creature manages to use his snout to suck up peanuts and warp time and space with his fingers. Unfortunately, his brother who is found by poachers go on a killing spree.",
+      "Language": "French, Spanish",
+      "Country": "Spain, France",
+      "Awards": "N/A",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BOGRlZGZhZTMtOTAzZC00MzkyLTlmYmMtMzE4NmZkZDgzNmQxL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTYxNjkxOQ@@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "2.0/10"
+        }
+      ],
+      "Metascore": "N/A",
+      "imdbRating": "2.0",
+      "imdbVotes": "4,601",
+      "imdbID": "tt0086026",
+      "Type": "movie",
+      "DVD": "N/A",
+      "BoxOffice": "N/A",
+      "Production": "Aries Cinematográfica Argentina",
+      "Website": "N/A",
+      "ListCategory": "Halloween, ",
+      "Availability": "MST3K Gizmoplex, DVD, ",
+      "Watched": "yes",
+      "UserReview": "It stinks!",
+      "UserScore": "2",
+      "id": 35
+    },
+    {
+      "Title": "It's a Wonderful Life",
+      "Year": "1946",
+      "Rated": "PG",
+      "Released": "07 Jan 1947",
+      "Runtime": "130 min",
+      "Genre": "Drama, Family, Fantasy",
+      "Director": "Frank Capra",
+      "Writer": "Frances Goodrich, Albert Hackett, Frank Capra",
+      "Actors": "James Stewart, Donna Reed, Lionel Barrymore",
+      "Plot": "George Bailey has spent his entire life giving of himself to the people of Bedford Falls. He has always longed to travel but never had the opportunity in order to prevent rich skinflint Mr. Potter from taking over the entire town. All that prevents him from doing so is George's modest building and loan company, which was founded by his generous father. But on Christmas Eve, George's Uncle Billy loses the business's $8,000 while intending to deposit it in the bank. Potter finds the misplaced money and hides it from Billy. When the bank examiner discovers the shortage later that night, George realizes that he will be held responsible and sent to jail and the company will collapse, finally allowing Potter to take over the town. Thinking of his wife, their young children, and others he loves will be better off with him dead, he contemplates suicide. But the prayers of his loved ones result in a gentle angel named Clarence coming to earth to help George, with the promise of earning his wings. He shows George what things would have been like if he had never been born.",
+      "Language": "English, French",
+      "Country": "United States",
+      "Awards": "Nominated for 5 Oscars. 6 wins & 6 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZjc4NDZhZWMtNGEzYS00ZWU2LThlM2ItNTA0YzQ0OTExMTE2XkEyXkFqcGdeQXVyNjUwMzI2NzU@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.6/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "93%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "89/100"
+        }
+      ],
+      "Metascore": "89",
+      "imdbRating": "8.6",
+      "imdbVotes": "451,942",
+      "imdbID": "tt0038650",
+      "Type": "movie",
+      "DVD": "13 Jul 2004",
+      "BoxOffice": "$44,000",
+      "Production": "N/A",
+      "Website": "N/A",
+      "ListCategory": "Christmas, ",
+      "Availability": "",
+      "Watched": "no",
+      "UserReview": "",
+      "UserScore": "",
+      "id": 36
     }
   ],
   "categories": [
@@ -1415,6 +1542,10 @@
     {
       "id": 7,
       "serviceName": "DVD"
+    },
+    {
+      "id": 8,
+      "serviceName": "MST3K Gizmoplex"
     }
   ]
 }
