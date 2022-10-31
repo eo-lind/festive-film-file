@@ -2,6 +2,11 @@ import React, { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import { MovieCard } from "./MovieCard"
 import { getAllHalloweenList, getAllWatchedHalloweenList, getAllUnwatchedHalloweenList } from "../../modules/MovieManager"
+import {
+    CountAllHalloweenMovies,
+    CountAllWatchedHalloweenMovies,
+    CountAllUnwatchedHalloweenMovies,
+} from "./MovieCounters"
 
 
 // all Halloween
@@ -29,7 +34,7 @@ export const MovieListHalloween = () => {
                         className="movies__listFilterLabels"
                         htmlFor="watched"
                     >
-                        Watched
+                        Watched (<CountAllWatchedHalloweenMovies />)
                     </label>
                 </div>
                 <div className="movies__listFilterBtnAndLabelContainer">
@@ -37,7 +42,7 @@ export const MovieListHalloween = () => {
                         <button className="movies__listFilterBtn" />
                     </Link>
                     <label className="movies__listFilterLabels" htmlFor="all">
-                        Unwatched
+                        Unwatched (<CountAllUnwatchedHalloweenMovies />)
                     </label>
                 </div>
                 <div className="movies__listFilterBtnAndLabelContainer">
@@ -45,7 +50,7 @@ export const MovieListHalloween = () => {
                         <button className="movies__listFilterBtn" />
                     </Link>
                     <label className="movies__listFilterLabels" htmlFor="all">
-                        All
+                        All (<CountAllHalloweenMovies />)
                     </label>
                 </div>
             </section>
@@ -80,22 +85,31 @@ export const MovieListHalloweenWatched = () => {
         <div className="viewBody">
             <section className="movies__listFilters">
                 <div className="movies__listFilterBtnAndLabelContainer">
-                  <Link to="/halloween-movies-watched">
-                      <button className="movies__listFilterBtn" />
-                  </Link>
-                  <label className="movies__listFilterLabels" htmlFor="watched">Watched</label>
+                    <Link to="/halloween-movies-watched">
+                        <button className="movies__listFilterBtn" />
+                    </Link>
+                    <label
+                        className="movies__listFilterLabels"
+                        htmlFor="watched"
+                    >
+                        Watched (<CountAllWatchedHalloweenMovies />)
+                    </label>
                 </div>
                 <div className="movies__listFilterBtnAndLabelContainer">
-                  <Link to="/halloween-movies-unwatched">
-                      <button className="movies__listFilterBtn" />
-                  </Link>
-                  <label className="movies__listFilterLabels" htmlFor="unwatched">Unwatched</label>
+                    <Link to="/halloween-movies-unwatched">
+                        <button className="movies__listFilterBtn" />
+                    </Link>
+                    <label className="movies__listFilterLabels" htmlFor="all">
+                        Unwatched (<CountAllUnwatchedHalloweenMovies />)
+                    </label>
                 </div>
                 <div className="movies__listFilterBtnAndLabelContainer">
-                  <Link to="/halloween-movies">
-                      <button className="movies__listFilterBtn" />
-                  </Link>
-                  <label className="movies__listFilterLabels" htmlFor="all">All</label>
+                    <Link to="/halloween-movies">
+                        <button className="movies__listFilterBtn" />
+                    </Link>
+                    <label className="movies__listFilterLabels" htmlFor="all">
+                        All (<CountAllHalloweenMovies />)
+                    </label>
                 </div>
             </section>
             <div className="card__container">
@@ -129,22 +143,31 @@ export const MovieListHalloweenUnwatched = () => {
         <div className="viewBody">
             <section className="movies__listFilters">
                 <div className="movies__listFilterBtnAndLabelContainer">
-                  <Link to="/halloween-movies-watched">
-                      <button className="movies__listFilterBtn" />
-                  </Link>
-                  <label className="movies__listFilterLabels" htmlFor="watched">Watched</label>
+                    <Link to="/halloween-movies-watched">
+                        <button className="movies__listFilterBtn" />
+                    </Link>
+                    <label
+                        className="movies__listFilterLabels"
+                        htmlFor="watched"
+                    >
+                        Watched (<CountAllWatchedHalloweenMovies />)
+                    </label>
                 </div>
                 <div className="movies__listFilterBtnAndLabelContainer">
-                  <Link to="/halloween-movies-unwatched">
-                      <button className="movies__listFilterBtn" />
-                  </Link>
-                  <label className="movies__listFilterLabels" htmlFor="unwatched">Unwatched</label>
+                    <Link to="/halloween-movies-unwatched">
+                        <button className="movies__listFilterBtn" />
+                    </Link>
+                    <label className="movies__listFilterLabels" htmlFor="all">
+                        Unwatched (<CountAllUnwatchedHalloweenMovies />)
+                    </label>
                 </div>
                 <div className="movies__listFilterBtnAndLabelContainer">
-                  <Link to="/halloween-movies">
-                      <button className="movies__listFilterBtn" />
-                  </Link>
-                  <label className="movies__listFilterLabels" htmlFor="all">All</label>
+                    <Link to="/halloween-movies">
+                        <button className="movies__listFilterBtn" />
+                    </Link>
+                    <label className="movies__listFilterLabels" htmlFor="all">
+                        All (<CountAllHalloweenMovies />)
+                    </label>
                 </div>
             </section>
             <div className="card__container">

@@ -24,16 +24,17 @@
 
 .home__leftColumn {
   width: 60%;
-  padding: 1em;
-  margin-right: 0.5em;
+  margin-right: 1em;
+  box-sizing: border-box;
 }
 
 .home__rightColumn {
   width: 20%;
-  padding: 1em;
-  margin-left: 0.5em;
-  display: flex;
-  flex-flow: column wrap;
+  box-sizing: border-box;
+  margin-left: 1em;
+  /* display: flex; */
+  /* flex-flow: column wrap; */
+  /* justify-content: space-between; */
 }
 
 .home__leftColumn p {
@@ -47,13 +48,17 @@
 
 /* ---------- SPOTLIGHT STYLING ---------- */
 
-.movieSpotlight__card {
+.movieSpotlight__card, .pieChart__card {
   border-radius: 0.25em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 1em;
   margin: 1em auto;
   display: flex;
   flex-direction: column;
+}
+
+.pieChart__card {
+  margin: 0.5 auto;
 }
 
 .movieSpotlight__img {

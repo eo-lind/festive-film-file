@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react"
 import { MovieSpotlight } from "./components/movies/MovieSpotlight"
 import { getRandomId } from "./modules/MovieManager"
+import {
+    AllMoviesPieChart,
+    HalloweenMoviesPieChart,
+    ChristmasMoviesPieChart,
+} from "./components/movies/MoviePieCharts"
 import "./home.css"
 
 export const Home = () => {
@@ -10,6 +15,7 @@ export const Home = () => {
         getRandomId().then(setSpotlightId)
     }
 
+    
     useEffect(() => {
         refreshSpotlightMovie()
     }, [])
@@ -85,15 +91,21 @@ export const Home = () => {
                     </p>
                 </div>
                 <div className="home__rightColumn">
-                    <h3 className="home__rightcolumnHeader">
-                        Movie Spotlight
-                    </h3>
-                    {spotlightId && (
-                        <MovieSpotlight movieId={spotlightId} />
-                    )}
+                    <h3 className="home__rightcolumnHeader">Movie Spotlight</h3>
+                    {spotlightId && <MovieSpotlight movieId={spotlightId} />}
                     <button onClick={refreshSpotlightMovie}>
                         Refresh &#x27f3;
                     </button>
+                    <h3 className="home__rightcolumnHeader">Stats</h3>
+                    <div className="pieChart__card">
+                        <AllMoviesPieChart />
+                    </div>
+                    <div className="pieChart__card">
+                        <HalloweenMoviesPieChart />
+                    </div>
+                    <div className="pieChart__card">
+                        <ChristmasMoviesPieChart />
+                    </div>
                 </div>
             </section>
         </div>

@@ -34,7 +34,7 @@ export const getMovieById = (id) => {
 
 // get all
 export const getAllMovies = () => {
-    return fetch(`${remoteURL}/movies?_sort=title`).then((res) => res.json())
+    return fetch(`${remoteURL}/movies?_sort=Title`).then((res) => res.json())
 }
 
 // -------------------- filtered results below -------------------- //
@@ -77,21 +77,21 @@ export const getAllUnwatchedChristmasList = () => {
 // get all in Halloween list
 export const getAllHalloweenList = () => {
     return fetch(
-        `${remoteURL}/movies?ListCategory_like=Halloween&_sort=title`
+        `${remoteURL}/movies?ListCategory_like=Halloween&_sort=Title`
     ).then((res) => res.json())
 }
 
 // get all watched in Halloween list
 export const getAllWatchedHalloweenList = () => {
     return fetch(
-        `${remoteURL}/movies?ListCategory_like=Halloween&watched=yes&_sort=title`
+        `${remoteURL}/movies?ListCategory_like=Halloween&Watched=yes&_sort=Title`
     ).then((res) => res.json())
 }
 
 // get all unwatched in Halloween list
 export const getAllUnwatchedHalloweenList = () => {
     return fetch(
-        `${remoteURL}/movies?ListCategory_like=Halloween&watched=no&_sort=title`
+        `${remoteURL}/movies?ListCategory_like=Halloween&Watched=no&_sort=Title`
     ).then((res) => res.json())
 }
 

@@ -2,6 +2,11 @@ import React, { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import { MovieCard } from "./MovieCard"
 import { getAllChristmasList, getAllWatchedChristmasList, getAllUnwatchedChristmasList } from "../../modules/MovieManager"
+import {
+    CountAllChristmasMovies,
+    CountAllWatchedChristmasMovies,
+    CountAllUnwatchedChristmasMovies,
+} from "./MovieCounters"
 
 // all Christmas
 export const MovieListChristmas = () => {
@@ -28,7 +33,7 @@ export const MovieListChristmas = () => {
                         className="movies__listFilterLabels"
                         htmlFor="watched"
                     >
-                        Watched
+                        Watched (<CountAllWatchedChristmasMovies />)
                     </label>
                 </div>
                 <div className="movies__listFilterBtnAndLabelContainer">
@@ -39,7 +44,7 @@ export const MovieListChristmas = () => {
                         className="movies__listFilterLabels"
                         htmlFor="unwatched"
                     >
-                        Unwatched
+                        Unwatched  (<CountAllUnwatchedChristmasMovies />)
                     </label>
                 </div>
                 <div className="movies__listFilterBtnAndLabelContainer">
@@ -47,7 +52,7 @@ export const MovieListChristmas = () => {
                         <button className="movies__listFilterBtn" />
                     </Link>
                     <label className="movies__listFilterLabels" htmlFor="all">
-                        All
+                        All (<CountAllChristmasMovies />)
                     </label>
                 </div>
             </section>
@@ -89,7 +94,7 @@ export const MovieListChristmasWatched = () => {
                         className="movies__listFilterLabels"
                         htmlFor="watched"
                     >
-                        Watched
+                        Watched (<CountAllWatchedChristmasMovies />)
                     </label>
                 </div>
                 <div className="movies__listFilterBtnAndLabelContainer">
@@ -100,7 +105,7 @@ export const MovieListChristmasWatched = () => {
                         className="movies__listFilterLabels"
                         htmlFor="unwatched"
                     >
-                        Unwatched
+                        Unwatched  (<CountAllUnwatchedChristmasMovies />)
                     </label>
                 </div>
                 <div className="movies__listFilterBtnAndLabelContainer">
@@ -108,7 +113,7 @@ export const MovieListChristmasWatched = () => {
                         <button className="movies__listFilterBtn" />
                     </Link>
                     <label className="movies__listFilterLabels" htmlFor="all">
-                        All
+                        All (<CountAllChristmasMovies />)
                     </label>
                 </div>
             </section>
@@ -150,7 +155,7 @@ export const MovieListChristmasUnwatched = () => {
                         className="movies__listFilterLabels"
                         htmlFor="watched"
                     >
-                        Watched
+                        Watched (<CountAllWatchedChristmasMovies />)
                     </label>
                 </div>
                 <div className="movies__listFilterBtnAndLabelContainer">
@@ -161,7 +166,7 @@ export const MovieListChristmasUnwatched = () => {
                         className="movies__listFilterLabels"
                         htmlFor="unwatched"
                     >
-                        Unwatched
+                        Unwatched  (<CountAllUnwatchedChristmasMovies />)
                     </label>
                 </div>
                 <div className="movies__listFilterBtnAndLabelContainer">
@@ -169,7 +174,7 @@ export const MovieListChristmasUnwatched = () => {
                         <button className="movies__listFilterBtn" />
                     </Link>
                     <label className="movies__listFilterLabels" htmlFor="all">
-                        All
+                        All (<CountAllChristmasMovies />)
                     </label>
                 </div>
             </section>
