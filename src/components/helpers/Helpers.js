@@ -62,18 +62,18 @@ export const getAverageRating = (movie) => {
         } 
     }
 
-    export const correctCategoryString = (movie) => {
-        const listString = movie.ListCategory
-        const listCategoryPreview = listString.replace(/(^ ,)|(, $)/g, "")
-        return listCategoryPreview
-    }
+    // export const correctCategoryString = (movie) => {
+    //     const listString = movie.ListCategory
+    //     const listCategoryPreview = listString.replace(/(^ ,)|(, $)/g, "")
+    //     return listCategoryPreview
+    // }
 
-    export const correctAvailabilityString = (movie) => {
-        const availabilityString = movie.Availability
-        const updatedAvailabilityString = availabilityString.replace(
-            /(^ ,)|(, $)/g,
-            ""
-        )
+    // export const correctAvailabilityString = (movie) => {
+    //     const availabilityString = movie.Availability
+    //     const updatedAvailabilityString = availabilityString.replace(
+    //         /(^ ,)|(, $)/g,
+    //         ""
+    //     )
 
-        return updatedAvailabilityString
-    }
+    //     return updatedAvailabilityString
+    // }

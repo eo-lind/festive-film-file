@@ -1,11 +1,13 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import {
     addMovie,
     getExternalMovieByTitle,
     getExternalMovieByTitleAndYear,
 } from "../../modules/MovieManager"
-import { getAverageRating } from "../helpers/Helpers"
+import { getAllCategories } from "../../modules/CategoryManager"
+import { getAllAvailability } from "../../modules/AvailabilityManager"
+import { getAverageRating, correctAvailabilityString, correctCategoryString } from "../helpers/Helpers"
 import "../forms.css"
 
 
@@ -13,8 +15,11 @@ export const MovieForm = () => {
     const [externalMovie, setExternalMovie] = useState({
         Title: "",
         Year: "",
+        Watched: "no"
     })
     const [searchTerm, setSearchTerm] = useState()
+    const [categories, setCategories] = useState([])
+    const [watchAvailability, setWatchAvailability] = useState([])
     const navigate = useNavigate()
 
     const handleControlledInputChange = (event) => {
@@ -27,14 +32,30 @@ export const MovieForm = () => {
         setSearchTerm(newSearchTerm)
     }
 
+    const handleSelectMultipleChange = (event) => {
+        const stateToChange = { ...externalMovie }
+
+        stateToChange[event.target.id] += event.target.value + ", "
+
+        setExternalMovie(stateToChange)
+    }
+
+    const handleUserAdditions = (event) => {
+        const userInput = { ...externalMovie }
+        let selectedVal = event.target.value
+        if (event.target.id.includes("Id")) {
+            selectedVal = parseInt(selectedVal)
+        }
+        userInput[event.target.id] = selectedVal
+        setExternalMovie(userInput)
+    }
+
     const handleClickSaveMovie = (event) => {
         event.preventDefault()
-
+        // TODO: make sure user selects a watched status
         addMovie(externalMovie).then(() => {
-            navigate("/movies-unwatched")
+            navigate("/movies")
         })
-
-        // TODO: navigate to an edit form that allows users to add user input to new movie object (same idea as movie edit form)
     }
 
     const handleClickSearch = (event) => {
@@ -70,7 +91,7 @@ export const MovieForm = () => {
                         Website: movieFromExternalAPI.Website,
                         ListCategory: "",
                         Availability: "",
-                        Watched: "no",
+                        Watched: "",
                         UserReview: "",
                         UserScore: "",
                     }
@@ -108,11 +129,11 @@ export const MovieForm = () => {
                         Website: movieFromExternalAPI.Website,
                         ListCategory: "",
                         Availability: "",
-                        Watched: "no",
+                        Watched: "",
                         UserReview: "",
                         UserScore: "",
                     }
-
+                        
                     setExternalMovie(updatedExternalMovie)
                 }
             )
@@ -226,6 +247,87 @@ export const MovieForm = () => {
         }
     }
 
+    const showUserInputPreview = () => {
+        if (
+            externalMovie.ListCategory !== "" ||
+            externalMovie.Availability !== "" ||
+            externalMovie.UserReview !== "" ||
+            externalMovie.UserScore !== ""
+        ) {
+            // return  the expanded info like on details view
+            return (
+                <>
+                    {externalMovie.ListCategory === "" ? (
+                        <></>
+                    ) : (
+                        <>
+                            <div className="movie__collapsibleDetails">
+                                <span className="descriptor">Lists:</span>{" "}
+                                {/* {correctCategoryString(externalMovie)} */}
+                            </div>
+                        </>
+                    )}
+
+                    {externalMovie.Watched === "" ? (
+                        <></>
+                    ) : (
+                        <>
+                            <div className="movie__collapsibleDetails">
+                                <span className="descriptor">Watched?</span>{" "}
+                                {externalMovie.Watched}
+                            </div>
+                        </>
+                    )}
+                    {externalMovie.Availability === "" ? (
+                        <></>
+                    ) : (
+                        <>
+                            <div className="movie__collapsibleDetails">
+                                <span className="descriptor">
+                                    How to Watch:
+                                </span>{" "}
+                                {/* {correctAvailabilityString(externalMovie)} */}
+                            </div>
+                        </>
+                    )}
+                    {externalMovie.UserScore === "" ? (
+                        <></>
+                    ) : (
+                        <>
+                            <div className="movie__collapsibleDetails">
+                                <span className="descriptor">Your Score:</span>{" "}
+                                {externalMovie.UserScore}/10
+                            </div>
+                        </>
+                    )}
+                    {externalMovie.UserReview === "" ? (
+                        <></>
+                    ) : (
+                        <>
+                            <div className="movie__review">
+                                <span className="descriptor">Review:</span>{" "}
+                                {externalMovie.UserReview}
+                            </div>
+                        </>
+                    )}
+                </>
+            )
+        } else {
+            return (<></>)
+        }
+    }
+
+    useEffect(() => {
+        getAllCategories().then((categoriesFromAPI) => {
+            setCategories(categoriesFromAPI)
+        })
+    }, [])
+
+    useEffect(() => {
+        getAllAvailability().then((availabilityFromAPI) => {
+            setWatchAvailability(availabilityFromAPI)
+        })
+    }, [])
    
     const posterAltTextString = `${externalMovie.Title} poster`
     const averageRating = getAverageRating(externalMovie)
@@ -238,24 +340,26 @@ export const MovieForm = () => {
                 <fieldset className="form__searchContainer">
                     <legend>Search For A Movie</legend>
                     <div className="form__searchInputContainer">
-                    <input
-                        type="text"
-                        id="title"
-                        onChange={handleControlledInputChange}
-                        required
-                        autoFocus
-                        className="form__leftInput"
-                        placeholder="Movie title"
-                    />
-                    <input
-                        type="text"
-                        id="year"
-                        onChange={handleControlledInputChange}
-                        required
-                        autoFocus
-                        className="form__rightInput"
-                        placeholder="Year (optional)"
-                    />
+                        <label hidden>Movie Title:</label>
+                        <input
+                            type="text"
+                            id="title"
+                            onChange={handleControlledInputChange}
+                            required
+                            autoFocus
+                            className="form__leftInput"
+                            placeholder="Movie title"
+                        />
+                        <label hidden>Year (optional):</label>
+                        <input
+                            type="text"
+                            id="year"
+                            onChange={handleControlledInputChange}
+                            required
+                            autoFocus
+                            className="form__rightInput"
+                            placeholder="Year (optional)"
+                        />
                     </div>
                     <button
                         type="button"
@@ -266,7 +370,109 @@ export const MovieForm = () => {
                         search
                     </button>
                 </fieldset>
+                {/* -------------------- begin user inputs -------------------- */}
+                <fieldset className="form__searchContainer">
+                    <legend>Add Your Info On This Movie</legend>
+                    <fieldset className="form__nestedFieldset">
+                        <label
+                            className="form__labelText"
+                            htmlFor="ListCategory"
+                        >
+                            Add to lists:
+                        </label>
+                        <br />
+                        <select
+                            value={externalMovie.ListCategory}
+                            name="ListCategory"
+                            id="ListCategory"
+                            onChange={handleSelectMultipleChange}
+                            className="form__control"
+                        >
+                            <option value="0">Select all that apply</option>
+                            {categories.map((cat) => (
+                                <option key={cat.id} value={cat.name}>
+                                    {cat.categoryName}
+                                </option>
+                            ))}
+                        </select>
+                    </fieldset>
 
+                    <fieldset className="form__nestedFieldset">
+                        <label className="form__labelText" htmlFor="Watched">
+                            Have you watched it?{" "}
+                        </label>
+                        <br />
+                        <select
+                            value={externalMovie.Watched}
+                            name="Watched"
+                            id="Watched"
+                            onChange={handleUserAdditions}
+                            className="form__control"
+                        >
+                            <option value="0">Select one</option>
+                            <option value="yes">yes</option>
+                            <option value="no">no</option>
+                        </select>
+                    </fieldset>
+                    <fieldset className="form__nestedFieldset">
+                        <label
+                            className="form__labelText"
+                            htmlFor="Availability"
+                        >
+                            How to Watch:
+                        </label>
+                        <select
+                            value={externalMovie.Availability}
+                            name="Availability"
+                            id="Availability"
+                            onChange={handleSelectMultipleChange}
+                            className="form__control"
+                        >
+                            <option value="0">Select all that apply</option>
+                            {watchAvailability.map((availabilityObj) => (
+                                <option
+                                    key={availabilityObj.id}
+                                    value={availabilityObj.serviceName}
+                                >
+                                    {availabilityObj.serviceName}
+                                </option>
+                            ))}
+                        </select>
+                    </fieldset>
+                    <fieldset className="form__nestedFieldset">
+                        <label className="form__labelText" htmlFor="UserScore">
+                            Score:
+                        </label>
+                        <input
+                            type="number"
+                            min={0}
+                            max={10}
+                            id="UserScore"
+                            onChange={handleUserAdditions}
+                            required
+                            autoFocus
+                            className="form__control"
+                            placeholder="Your score"
+                            value={externalMovie.UserScore}
+                        />
+                    </fieldset>
+                    <fieldset className="form__nestedFieldset">
+                        <label className="form__labelText" htmlFor="UserReview">
+                            Your Review:
+                        </label>
+                        <br />
+                        <textarea
+                            id="UserReview"
+                            onChange={handleUserAdditions}
+                            autoFocus
+                            className="form__control"
+                            placeholder="Write a brief review"
+                            value={externalMovie.UserReview}
+                        />
+                    </fieldset>
+                    {/* TODO: handle user input in preview  */}
+                </fieldset>
+                {/* -------------------- end user inputs -------------------- */}
                 <section className="form__finalActionBtnContainer">
                     <button
                         type="button"
@@ -292,6 +498,7 @@ export const MovieForm = () => {
                 <div className="card" id="card__preview">
                     <h2 className="form__titleHeader">Preview</h2>
                     {showPreview()}
+                    {showUserInputPreview()}
                 </div>
             </div>
         </div>
