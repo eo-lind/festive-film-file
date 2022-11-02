@@ -1592,6 +1592,673 @@
       "UserReview": "",
       "UserScore": "",
       "id": 38
+    },
+    {
+      "Title": "Hocus Pocus",
+      "Year": "1993",
+      "Rated": "PG",
+      "Released": "16 Jul 1993",
+      "Runtime": "96 min",
+      "Genre": "Comedy, Family, Fantasy",
+      "Director": "Kenny Ortega",
+      "Writer": "David Kirschner, Mick Garris, Neil Cuthbert",
+      "Actors": "Bette Midler, Sarah Jessica Parker, Kathy Najimy",
+      "Plot": "300 years have passed since the Sanderson sisters were executed for practicing dark witchcraft. Returning to life thanks to a combination of a spell spoken before their demise and the accidental actions of Max, the new-kid-in-town, the sisters have but one night to secure their continuing existence...",
+      "Language": "English, French",
+      "Country": "United States",
+      "Awards": "2 wins & 11 nominations",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNWM3NmRhMGMtOGE4ZC00MDk0LWI1NjMtMjVlNTEwOTcwZTc0XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "6.9/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "38%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "43/100"
+        }
+      ],
+      "Metascore": "43",
+      "imdbRating": "6.9",
+      "imdbVotes": "139,819",
+      "imdbID": "tt0107120",
+      "Type": "movie",
+      "DVD": "22 Apr 2003",
+      "BoxOffice": "$44,342,713",
+      "Production": "N/A",
+      "Website": "N/A",
+      "ListCategory": "Halloween, ",
+      "Availability": "Disney+, ",
+      "Watched": "yes",
+      "UserReview": "",
+      "UserScore": "",
+      "id": 39
+    },
+    {
+      "Title": "Hocus Pocus 2",
+      "Year": "2022",
+      "Rated": "PG",
+      "Released": "30 Sep 2022",
+      "Runtime": "103 min",
+      "Genre": "Comedy, Family, Fantasy",
+      "Director": "Anne Fletcher",
+      "Writer": "Jen D'Angelo, David Kirschner, Blake Harris",
+      "Actors": "Bette Midler, Sarah Jessica Parker, Kathy Najimy",
+      "Plot": "Three young women accidentally bring back the Sanderson Sisters to modern-day Salem and must figure out how to stop the child-hungry witches from wreaking havoc on the world. The world may have been free of Winifred, Mary, and Sarah and the fear they invoked in us all, but what happens when you mess with magic? It messes back.",
+      "Language": "English",
+      "Country": "United States",
+      "Awards": "1 win",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BODcxYzI1MTktZWYzNC00MGZlLWI3ZjYtNzhmM2IyOTlkNjYyXkEyXkFqcGdeQXVyMTA1OTcyNDQ4._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "6.1/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "63%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "55/100"
+        }
+      ],
+      "Metascore": "55",
+      "imdbRating": "6.1",
+      "imdbVotes": "35,305",
+      "imdbID": "tt11909878",
+      "Type": "movie",
+      "DVD": "30 Sep 2022",
+      "BoxOffice": "N/A",
+      "Production": "N/A",
+      "Website": "N/A",
+      "ListCategory": "Halloween, ",
+      "Availability": "Disney+, ",
+      "Watched": "yes",
+      "UserReview": "",
+      "UserScore": "",
+      "id": 40
+    },
+    {
+      "Title": "Beetlejuice",
+      "Year": "1988",
+      "Rated": "PG",
+      "Released": "30 Mar 1988",
+      "Runtime": "92 min",
+      "Genre": "Comedy, Fantasy",
+      "Director": "Tim Burton",
+      "Writer": "Michael McDowell, Larry Wilson, Warren Skaaren",
+      "Actors": "Alec Baldwin, Geena Davis, Michael Keaton",
+      "Plot": "Adam and Barbara are a normal couple...who happen to be dead. They have given their precious time to decorate their house and make it their own, but unfortunately a family is moving in, and not quietly. Adam and Barbara try to scare them out, but end up becoming the main attraction to the money making family. They call upon Beetlejuice to help, but Beetlejuice has more in mind than just helping.",
+      "Language": "English",
+      "Country": "United States",
+      "Awards": "Won 1 Oscar. 7 wins & 11 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZDdmNjBlYTctNWU0MC00ODQxLWEzNDQtZGY1NmRhYjNmNDczXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.5/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "85%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "70/100"
+        }
+      ],
+      "Metascore": "70",
+      "imdbRating": "7.5",
+      "imdbVotes": "303,492",
+      "imdbID": "tt0094721",
+      "Type": "movie",
+      "DVD": "16 Sep 2008",
+      "BoxOffice": "$74,664,632",
+      "Production": "N/A",
+      "Website": "N/A",
+      "ListCategory": "Halloween, ",
+      "Availability": "DVD, ",
+      "Watched": "yes",
+      "UserReview": "",
+      "UserScore": "",
+      "id": 41
+    },
+    {
+      "Title": "Ghostbusters",
+      "Year": "1984",
+      "Rated": "PG",
+      "Released": "08 Jun 1984",
+      "Runtime": "105 min",
+      "Genre": "Action, Comedy, Fantasy",
+      "Director": "Ivan Reitman",
+      "Writer": "Dan Aykroyd, Harold Ramis, Rick Moranis",
+      "Actors": "Bill Murray, Dan Aykroyd, Sigourney Weaver",
+      "Plot": "Peter Venkman, Ray Stantz and Egon Spengler work at Columbia University. where they delve into the paranormal and fiddle with many unethical experiments on their students. As they are kicked out of the University, they really understand the paranormal and go into business for themselves. Under the new snazzy business name of 'Ghostbusters', and living in the old firehouse building they work out of, they are called to rid New York City of paranormal phenomenon at everyone's whim. - for a price. They make national press as the media reports the Ghostbusters are the cause of it all. Thrown in jail by the EPA, the mayor takes a chance and calls on them to help save the city. Unbeknownst to all, a long dead Gozer worshiper (Evo Shandor) erected a downtown apartment building which is the cause of all the paranormal activity. They find out the building could resurrect the ancient Hittite god, Gozer, and bring an end to all of humanity. Who are you gonna call to stop this terrible world-ending menace?",
+      "Language": "English",
+      "Country": "United States",
+      "Awards": "Nominated for 2 Oscars. 7 wins & 8 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTkxMjYyNzgwMl5BMl5BanBnXkFtZTgwMTE3MjYyMTE@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.8/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "97%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "71/100"
+        }
+      ],
+      "Metascore": "71",
+      "imdbRating": "7.8",
+      "imdbVotes": "414,090",
+      "imdbID": "tt0087332",
+      "Type": "movie",
+      "DVD": "02 Aug 2005",
+      "BoxOffice": "$243,578,797",
+      "Production": "N/A",
+      "Website": "N/A",
+      "ListCategory": "Halloween, ",
+      "Availability": "",
+      "Watched": "yes",
+      "UserReview": "",
+      "UserScore": "10",
+      "id": 42
+    },
+    {
+      "Title": "Ghostbusters II",
+      "Year": "1989",
+      "Rated": "PG",
+      "Released": "16 Jun 1989",
+      "Runtime": "108 min",
+      "Genre": "Action, Comedy, Fantasy",
+      "Director": "Ivan Reitman",
+      "Writer": "Dan Aykroyd, Harold Ramis",
+      "Actors": "Bill Murray, Dan Aykroyd, Sigourney Weaver",
+      "Plot": "Having lost their status and credibility five years after covering New York City with marshmallow in Ghostbusters (1984), the once-famous band of spirit-hunters find themselves struggling to keep afloat, working odd jobs. However, when Dana Barrett and her baby, Oscar, have yet another terrifying encounter with the paranormal, it's up to Peter Venkman and his fearless team of supernatural crime-fighters to save the day. Now, once more, humanity is in danger, as rivers of slimy psycho-reactive ectoplasm, and the dreadful manifestation of the evil sixteenth-century tyrant, Vigo the Carpathian, threaten to plunge the entire city into darkness unless the selfless Ghostbusters take action. Can they save the world for the second time?",
+      "Language": "English",
+      "Country": "United States",
+      "Awards": "2 wins & 1 nomination",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ2NTk4MjE5Ml5BMl5BanBnXkFtZTgwODIwNjYxMTE@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "6.6/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "55%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "56/100"
+        }
+      ],
+      "Metascore": "56",
+      "imdbRating": "6.6",
+      "imdbVotes": "208,126",
+      "imdbID": "tt0097428",
+      "Type": "movie",
+      "DVD": "02 Aug 2005",
+      "BoxOffice": "$112,494,738",
+      "Production": "N/A",
+      "Website": "N/A",
+      "ListCategory": "Halloween, ",
+      "Availability": "",
+      "Watched": "yes",
+      "UserReview": "",
+      "UserScore": "7",
+      "id": 43
+    },
+    {
+      "Title": "Ghostbusters",
+      "Year": "2016",
+      "Rated": "PG-13",
+      "Released": "15 Jul 2016",
+      "Runtime": "117 min",
+      "Genre": "Action, Comedy, Fantasy",
+      "Director": "Paul Feig",
+      "Writer": "Katie Dippold, Paul Feig, Ivan Reitman",
+      "Actors": "Melissa McCarthy, Kristen Wiig, Kate McKinnon",
+      "Plot": "Paranormal researcher Abby Yates and physicist Erin Gilbert are trying to prove that ghosts exist in modern society. When strange apparitions appear in Manhattan, Gilbert and Yates turn to engineer Jillian Holtzmann for help. Also joining the team is Patty Tolan, a lifelong New Yorker who knows the city inside and out. Armed with proton packs and plenty of attitude, the four women prepare for an epic battle as more than 1,000 mischievous ghouls descend on Times Square.",
+      "Language": "English",
+      "Country": "United States, Australia",
+      "Awards": "5 wins & 24 nominations",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNGYzNDM0M2QtZDFkNy00OTI2LWIyNjctNjNhNDM5Zjk3NzU2XkEyXkFqcGdeQXVyNjQ3MDg0MTY@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "6.9/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "73%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "60/100"
+        }
+      ],
+      "Metascore": "60",
+      "imdbRating": "6.9",
+      "imdbVotes": "231,649",
+      "imdbID": "tt1289401",
+      "Type": "movie",
+      "DVD": "11 Oct 2016",
+      "BoxOffice": "$128,350,574",
+      "Production": "N/A",
+      "Website": "N/A",
+      "ListCategory": "Halloween, ",
+      "Availability": "",
+      "Watched": "no",
+      "UserReview": "",
+      "UserScore": "",
+      "id": 44
+    },
+    {
+      "Title": "Ghostbusters: Afterlife",
+      "Year": "2021",
+      "Rated": "PG-13",
+      "Released": "19 Nov 2021",
+      "Runtime": "124 min",
+      "Genre": "Adventure, Comedy, Fantasy",
+      "Director": "Jason Reitman",
+      "Writer": "Gil Kenan, Jason Reitman, Dan Aykroyd",
+      "Actors": "Carrie Coon, Paul Rudd, Finn Wolfhard",
+      "Plot": "When a single mom and her two kids arrive in a small town, they begin to discover their connection to the original Ghostbusters and the secret legacy their grandfather left behind.",
+      "Language": "English",
+      "Country": "United States, Canada",
+      "Awards": "Nominated for 1 BAFTA Award23 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMGY2NjUwODEtMGM5OS00MzhkLWEzYTUtYjkwMjFmNjhiN2FmXkEyXkFqcGdeQXVyMjMwNDgzNjc@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.1/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "63%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "45/100"
+        }
+      ],
+      "Metascore": "45",
+      "imdbRating": "7.1",
+      "imdbVotes": "177,922",
+      "imdbID": "tt4513678",
+      "Type": "movie",
+      "DVD": "10 Jan 2022",
+      "BoxOffice": "$129,360,575",
+      "Production": "N/A",
+      "Website": "N/A",
+      "ListCategory": "Halloween, ",
+      "Availability": "",
+      "Watched": "no",
+      "UserReview": "",
+      "UserScore": "",
+      "id": 45
+    },
+    {
+      "Title": "Maleficent",
+      "Year": "2014",
+      "Rated": "PG",
+      "Released": "30 May 2014",
+      "Runtime": "97 min",
+      "Genre": "Adventure, Family, Fantasy",
+      "Director": "Robert Stromberg",
+      "Writer": "Linda Woolverton, Charles Perrault, Milt Banta",
+      "Actors": "Angelina Jolie, Elle Fanning, Sharlto Copley",
+      "Plot": "A beautiful, pure-hearted young woman, Maleficent has an idyllic life growing up in a peaceable forest kingdom, until one day when an invading army threatens the harmony of the land. Maleficent rises to be the land's fiercest protector, but she ultimately suffers a ruthless betrayal - an act that begins to turn her pure heart to stone. Bent on revenge, Maleficent faces a battle with the invading king's successor and, as a result, places a curse upon his newborn infant Aurora. As the child grows, Maleficent realizes that Aurora holds the key to peace in the kingdom - and perhaps to Maleficent's true happiness as well.",
+      "Language": "English",
+      "Country": "United States",
+      "Awards": "Nominated for 1 Oscar. 12 wins & 43 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMjAwMzAzMzExOF5BMl5BanBnXkFtZTgwOTcwMDA5MTE@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "6.9/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "54%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "56/100"
+        }
+      ],
+      "Metascore": "56",
+      "imdbRating": "6.9",
+      "imdbVotes": "375,509",
+      "imdbID": "tt1587310",
+      "Type": "movie",
+      "DVD": "04 Nov 2014",
+      "BoxOffice": "$241,410,378",
+      "Production": "N/A",
+      "Website": "N/A",
+      "ListCategory": "Halloween, ",
+      "Availability": "Disney+, ",
+      "Watched": "no",
+      "UserReview": "",
+      "UserScore": "",
+      "id": 46
+    },
+    {
+      "Title": "Maleficent: Mistress of Evil",
+      "Year": "2019",
+      "Rated": "PG",
+      "Released": "18 Oct 2019",
+      "Runtime": "119 min",
+      "Genre": "Adventure, Family, Fantasy",
+      "Director": "Joachim Rønning",
+      "Writer": "Linda Woolverton, Noah Harpster, Micah Fitzerman-Blue",
+      "Actors": "Angelina Jolie, Elle Fanning, Harris Dickinson",
+      "Plot": "Five peaceful years have passed since the demise of the duplicitous monarch, King Stefan, in Maleficent (2014), and now, an unforeseen but joyous event is about to unite the mortal kingdom of Ulstead and the fairy-realm of the enchanted Moors. However, once more, odious treason stands in the way of true young love, as malicious envy, unbounded ambition and ignoble thoughts creep in the hearts of men. Now, two neighboring worlds find themselves divided by fear and prejudice, and, sadly, the impending union paves the way for an all-out confrontation. Suddenly, the magnificent winged sprite, Maleficent, and the lovely Princess Aurora are caught in the middle. Does love always end well?",
+      "Language": "English",
+      "Country": "United Kingdom, Canada, United States",
+      "Awards": "Nominated for 1 Oscar. 1 win & 11 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BZjJiYTExOTAtNWU0Yi00NzJjLTkwOTgtOTU2NWM1ZjJmYWVhXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "6.6/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "39%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "43/100"
+        }
+      ],
+      "Metascore": "43",
+      "imdbRating": "6.6",
+      "imdbVotes": "105,340",
+      "imdbID": "tt4777008",
+      "Type": "movie",
+      "DVD": "18 Oct 2019",
+      "BoxOffice": "$113,929,605",
+      "Production": "N/A",
+      "Website": "N/A",
+      "ListCategory": "Halloween, ",
+      "Availability": "Disney+, ",
+      "Watched": "no",
+      "UserReview": "",
+      "UserScore": "",
+      "id": 47
+    },
+    {
+      "Title": "Get Out",
+      "Year": "2017",
+      "Rated": "R",
+      "Released": "24 Feb 2017",
+      "Runtime": "104 min",
+      "Genre": "Horror, Mystery, Thriller",
+      "Director": "Jordan Peele",
+      "Writer": "Jordan Peele",
+      "Actors": "Daniel Kaluuya, Allison Williams, Bradley Whitford",
+      "Plot": "Chris and his girlfriend Rose go upstate to visit her parents for the weekend. At first, Chris reads the family's overly accommodating behavior as nervous attempts to deal with their daughter's interracial relationship, but as the weekend progresses, a series of increasingly disturbing discoveries lead him to a truth that he never could have imagined.",
+      "Language": "English, Swahili",
+      "Country": "United States, Japan",
+      "Awards": "Won 1 Oscar. 151 wins & 209 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMjUxMDQwNjcyNl5BMl5BanBnXkFtZTgwNzcwMzc0MTI@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.7/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "98%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "85/100"
+        }
+      ],
+      "Metascore": "85",
+      "imdbRating": "7.7",
+      "imdbVotes": "601,522",
+      "imdbID": "tt5052448",
+      "Type": "movie",
+      "DVD": "09 May 2017",
+      "BoxOffice": "$176,196,665",
+      "Production": "Universal Pictures, QC Entertainment, Blumhouse Productions",
+      "Website": "N/A",
+      "ListCategory": "Halloween, ",
+      "Availability": "",
+      "Watched": "no",
+      "UserReview": "",
+      "UserScore": "",
+      "id": 48
+    },
+    {
+      "Title": "The Nightmare Before Christmas",
+      "Year": "1993",
+      "Rated": "PG",
+      "Released": "29 Oct 1993",
+      "Runtime": "76 min",
+      "Genre": "Animation, Family, Fantasy",
+      "Director": "Henry Selick",
+      "Writer": "Tim Burton, Michael McDowell, Caroline Thompson",
+      "Actors": "Danny Elfman, Chris Sarandon, Catherine O'Hara",
+      "Plot": "Jack Skellington, the pumpkin king of Halloween Town, is bored with doing the same thing every year for Halloween. One day he stumbles into Christmas Town, and is so taken with the idea of Christmas that he tries to get the resident bats, ghouls, and goblins of Halloween Town to help him put on Christmas instead of Halloween -- but alas, they can't get it quite right.",
+      "Language": "English",
+      "Country": "United States",
+      "Awards": "Nominated for 1 Oscar. 6 wins & 17 nominations total",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNWE4OTNiM2ItMjY4Ni00ZTViLWFiZmEtZGEyNGY2ZmNlMzIyXkEyXkFqcGdeQXVyMDU5NDcxNw@@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.9/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "95%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "82/100"
+        }
+      ],
+      "Metascore": "82",
+      "imdbRating": "7.9",
+      "imdbVotes": "336,358",
+      "imdbID": "tt0107688",
+      "Type": "movie",
+      "DVD": "03 Oct 2000",
+      "BoxOffice": "$77,368,668",
+      "Production": "N/A",
+      "Website": "N/A",
+      "ListCategory": "Christmas, Halloween, ",
+      "Availability": "Disney+, ",
+      "Watched": "yes",
+      "UserReview": "",
+      "UserScore": "",
+      "id": 49
+    },
+    {
+      "Title": "The Haunted Mansion",
+      "Year": "2003",
+      "Rated": "PG",
+      "Released": "26 Nov 2003",
+      "Runtime": "88 min",
+      "Genre": "Comedy, Family, Fantasy",
+      "Director": "Rob Minkoff",
+      "Writer": "David Berenbaum",
+      "Actors": "Eddie Murphy, Marsha Thomason, Jennifer Tilly",
+      "Plot": "Realtor workaholic Jim Evers and his wife and business partner Sara gets a call late one night from mansion owner Edward Gracey, who is looking to sell his property. Smelling the biggest deal of their career, Jim, Sara and their two children pay a visit to the mansion, located on a remote bayou. A torrential thunderstorm of mysterious origin strands the Evers family in the old mansion with the brooding, eccentric Gracey, his mysterious butler, Ramsley, and a variety of residents both seen and unseen. At first Jim scoffs at Gracey's stories about ghosts and hauntings, until he unearths the mystery of the mansion and finds that his wife Sara has unexpected connections to its haunted past!",
+      "Language": "English",
+      "Country": "United States",
+      "Awards": "1 win & 4 nominations",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BOWNkNzNlYWItNjIwOC00NzNlLTkxY2MtOWQyMTdmYTAzNGY5XkEyXkFqcGdeQXVyNjk1Njg5NTA@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "5.1/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "14%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "34/100"
+        }
+      ],
+      "Metascore": "34",
+      "imdbRating": "5.1",
+      "imdbVotes": "49,633",
+      "imdbID": "tt0338094",
+      "Type": "movie",
+      "DVD": "31 Jul 2005",
+      "BoxOffice": "$75,847,266",
+      "Production": "N/A",
+      "Website": "N/A",
+      "ListCategory": "Halloween, ",
+      "Availability": "Disney+, ",
+      "Watched": "no",
+      "UserReview": "",
+      "UserScore": "",
+      "id": 50
+    },
+    {
+      "Title": "Muppets Haunted Mansion",
+      "Year": "2021",
+      "Rated": "TV-PG",
+      "Released": "08 Oct 2021",
+      "Runtime": "52 min",
+      "Genre": "Adventure, Comedy, Family",
+      "Director": "Kirk R. Thatcher",
+      "Writer": "Bill Barretta, Kirk R. Thatcher, Kelly Younger",
+      "Actors": "Will Arnett, Taraji P. Henson, Darren Criss",
+      "Plot": "With most of the Muppets having fun at Kermit and Miss Piggy's annual Halloween party, Gonzo the Great and Pepe the King Prawn have decided to take on an epic fear challenge: spend an entire night in the impenetrable castle of the legendary magician, The Great MacGuffin. As the unsuspecting guests meander through the labyrinthine corridors of the gloomy tower, hoping to rub shoulders with glamorous celebrities, spine-chilling, blood-curdling events occur, forcing them to face their biggest fears. What have Gonzo and Pepe gotten themselves into this time? Will they stay alive in the most dangerous place on Earth, or will they spend eternity in the Muppets' Haunted Mansion?",
+      "Language": "English",
+      "Country": "United States",
+      "Awards": "1 win & 1 nomination",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNDYwMGI4ZTctZTgwNC00YmRmLThjODQtYjNjMzNkMTdhYTQzXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "6.4/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "71%"
+        }
+      ],
+      "Metascore": "N/A",
+      "imdbRating": "6.4",
+      "imdbVotes": "6,639",
+      "imdbID": "tt14602326",
+      "Type": "movie",
+      "DVD": "08 Oct 2021",
+      "BoxOffice": "N/A",
+      "Production": "N/A",
+      "Website": "N/A",
+      "ListCategory": "Halloween, ",
+      "Availability": "Disney+, ",
+      "Watched": "yes",
+      "UserReview": "",
+      "UserScore": "",
+      "id": 51
+    },
+    {
+      "Title": "The Muppet Christmas Carol",
+      "Year": "1992",
+      "Rated": "G",
+      "Released": "11 Dec 1992",
+      "Runtime": "85 min",
+      "Genre": "Comedy, Drama, Family",
+      "Director": "Brian Henson",
+      "Writer": "Charles Dickens, Jerry Juhl",
+      "Actors": "Michael Caine, Dave Goelz, Steve Whitmire",
+      "Plot": "A retelling of the classic Dickens tale of Ebenezer Scrooge, miser extraordinaire. He is held accountable for his dastardly ways during night-time visitations by the Ghosts of Christmas Past, Present, and future.",
+      "Language": "English",
+      "Country": "United States, United Kingdom",
+      "Awards": "2 wins & 1 nomination",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BN2Y0NWRkNWItZWEwNi00MDNlLWJmZDYtNTkwYzI5Nzg4MjVjXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.7/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "75%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "64/100"
+        }
+      ],
+      "Metascore": "64",
+      "imdbRating": "7.7",
+      "imdbVotes": "58,423",
+      "imdbID": "tt0104940",
+      "Type": "movie",
+      "DVD": "06 Nov 2012",
+      "BoxOffice": "$27,381,507",
+      "Production": "N/A",
+      "Website": "N/A",
+      "ListCategory": "Christmas, ",
+      "Availability": "Disney+, ",
+      "Watched": "no",
+      "UserReview": "",
+      "UserScore": "",
+      "id": 52
+    },
+    {
+      "Title": "Homicidal",
+      "Year": "1961",
+      "Rated": "Unrated",
+      "Released": "28 Jun 1961",
+      "Runtime": "88 min",
+      "Genre": "Horror, Mystery, Thriller",
+      "Director": "William Castle",
+      "Writer": "Robb White",
+      "Actors": "Glenn Corbett, Patricia Breslin, Eugenie Leontovich",
+      "Plot": "The story centers around a murderous scheme to collect a rich inheritance. The object of murder is Miriam Webster, who is to share in the inheritance with her half brother Warren, who lives with his childhood guardian Helga in the mansion where Warren and Mariam grew up. Confined to a wheelchair after recently suffering a stroke, Helga is cared for by her nurse Emily, a strange young woman who has formed a close bond with Warren.",
+      "Language": "English",
+      "Country": "United States",
+      "Awards": "1 nomination",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNTBlZjE2OGUtNmI5MS00ZjhkLWFmZmMtYmIxOWE2MTMxYTZlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "6.8/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "80%"
+        }
+      ],
+      "Metascore": "N/A",
+      "imdbRating": "6.8",
+      "imdbVotes": "3,237",
+      "imdbID": "tt0054988",
+      "Type": "movie",
+      "DVD": "20 Oct 2009",
+      "BoxOffice": "N/A",
+      "Production": "N/A",
+      "Website": "N/A",
+      "ListCategory": "Halloween, ",
+      "Availability": "DVD, ",
+      "Watched": "no",
+      "UserReview": "",
+      "UserScore": "",
+      "id": 53
     }
   ],
   "categories": [
